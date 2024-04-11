@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EkomsStore", "EkomsStore\EkomsStore.csproj", "{403B1981-4F03-4165-8597-72CEFBBB7F8F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EkomsStore.API", "EkomsStore\EkomsStore.API.csproj", "{403B1981-4F03-4165-8597-72CEFBBB7F8F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EkomsStore.Domain", "EkomsStore.Domain\EkomsStore.Domain.csproj", "{5C22F273-1D6B-4F31-B18D-80B648A836E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EkomsStore.Application", "EkomsStore.Application\EkomsStore.Application.csproj", "{0B7BE441-8BCD-4443-AE6F-F8EBEDC5D5C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EkomsStore.Infrastructure", "EkomsStore.Infrastructure\EkomsStore.Infrastructure.csproj", "{7EF1C7A9-513D-4AE7-ABCA-79C8A7314BC0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{5C22F273-1D6B-4F31-B18D-80B648A836E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C22F273-1D6B-4F31-B18D-80B648A836E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C22F273-1D6B-4F31-B18D-80B648A836E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B7BE441-8BCD-4443-AE6F-F8EBEDC5D5C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B7BE441-8BCD-4443-AE6F-F8EBEDC5D5C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B7BE441-8BCD-4443-AE6F-F8EBEDC5D5C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B7BE441-8BCD-4443-AE6F-F8EBEDC5D5C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EF1C7A9-513D-4AE7-ABCA-79C8A7314BC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EF1C7A9-513D-4AE7-ABCA-79C8A7314BC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EF1C7A9-513D-4AE7-ABCA-79C8A7314BC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EF1C7A9-513D-4AE7-ABCA-79C8A7314BC0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
