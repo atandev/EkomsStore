@@ -19,7 +19,7 @@ namespace EkomsStore.Domain.DataAccess
         }
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
-            options.UseSqlServer(configuration.GetConnectionString(""));
+            options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"));
         }
 
         public DbSet<Products> Products { get; set; }

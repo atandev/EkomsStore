@@ -31,16 +31,18 @@ namespace EkomsStore.Application.Services
 
             if (userSecurity == null) { return result; }
 
-            bool passwordValidated = PasswordSecurityHelper.CheckPassword(userSecurity.password,login.Password);
+            var passord = PasswordSecurityHelper.CalculateHash($"{login.Password}{login.Username}", userSecurity.password_salt);
+
+            bool passwordValidated = PasswordSecurityHelper.CheckPassword(userSecurity.password,password);
 
             if (passwordValidated)
             {
                 result = new AuthUserResponse()
-
                 {
                     Id = user.Id,
                     Firstname = user.FirstName,
                     Lastname = user.LastName,
+                    Username = user.Username,
                     EmailAddress = user.EmailAddress,
                     Role = ":"
                 };

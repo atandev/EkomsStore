@@ -41,7 +41,7 @@ namespace EkomsStore.Controllers
                 InitDependency();
 
                 var user = await authService.AuthLogin(login);
-                if (user == null)
+                if (user.Username == null)
                     return Unauthorized(new AuthLoginResponse { ErrorMessage = "Invalid Username or Password" });
 
                 var signingCredentials = jwtService.GetSigningCredentials();
